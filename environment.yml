@@ -1,0 +1,22 @@
+name: geometry-aware-thermal-prediction
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11.14
+  - pytorch=2.5.1
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+      - spconv-cu121==2.3.8
+      - numpy==2.0.1
+      - pandas==2.3.3
+      - pvlib==0.15.1
+      - PyYAML==6.0.3
+      - shapely==2.1.2
+      - honeybee-core==1.64.39
+      - honeybee-energy==1.119.7
+      - ladybug-geometry==1.34.24
+      - matplotlib==3.10.8
+      - openpyxl==3.1.5

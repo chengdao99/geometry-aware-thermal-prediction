@@ -1,0 +1,93 @@
+{
+  "experiment": {
+    "name": "cnn_cross_decoder"
+  },
+  "training": {
+    "epochs": 150,
+    "batch_size": 32,
+    "val_batch_size": 32,
+    "lr": "1e-4",
+    "lr_min_ratio": 0.01,
+    "weight_decay": "1e-4",
+    "grad_clip": 1.0,
+    "patience": 75,
+    "seed": 1919,
+    "warmup_epochs": 5
+  },
+  "data": {
+    "segs": 2,
+    "val_ratio": 0.1,
+    "val_segs_divisor": 2,
+    "val_min_segs": 2,
+    "workers": 16,
+    "min_seg_len": 72,
+    "max_seg_len": 240,
+    "cold_start_prob": 0.75,
+    "val_cold_start_prob": 1.0,
+    "max_zones": 10,
+    "val_max_zones": 10,
+    "zone_sample_seed": null,
+    "nb_k": 15,
+    "nb_dropout_max": 5,
+    "nb_dropout_min_valid": 1,
+    "val_zone_sample_seed": null,
+    "val_fixed": false
+  },
+  "model": {
+    "cnn_out_dim": 256,
+    "attn_heads": 8,
+    "max_zone_queries": 256,
+    "max_global_tokens": 4096,
+    "spatial_bias_sigma": 20.0,
+    "distance_bias_clip": 12.0,
+    "distance_chunk_size": 64,
+    "context_len": 72,
+    "decoder_d_model": 128,
+    "decoder_heads": 4,
+    "decoder_layers": 4,
+    "d_weather": 17,
+    "nb_feat_dim": 4,
+    "n_quantiles": 3,
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "dropout": 0.1,
+    "tbptt_k": 72,
+    "use_weather_delta": true,
+    "weather_delta_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "use_indoor_velocity": true,
+    "neighbor_distance_sigma_m": 4.0,
+    "neighbor_distance_bias_clip": 12.0,
+    "cnn_in_dim": 12
+  },
+  "loss": {
+    "change_weight_alpha": 2.0,
+    "change_weight_gamma": 2.0,
+    "change_threshold_c": 0.5,
+    "transition_loss_weight": 0.5,
+    "transition_beta_c": 0.25,
+    "focal_loss_weight": 0.25,
+    "focal_threshold_c": 1.0,
+    "focal_gamma": 2.0,
+    "t0_loss_weight": 0.25,
+    "crossing_loss_weight": 0.05
+  },
+  "voxel_features": {
+    "use_element_onehot": false
+  },
+  "research_data": {
+    "training_label_family": "train_label_2000",
+    "recorded_training_voxel_family": "voxel_4000",
+    "demonstration_voxelizer_family": "voxel_4000_v2",
+    "weather_file": "SWE_VG_Goteborg.City.AP.025120_TMYx.2011-2025.epw"
+  }
+}

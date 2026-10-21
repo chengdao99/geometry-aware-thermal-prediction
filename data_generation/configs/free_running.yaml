@@ -1,0 +1,7 @@
+# The demonstration has no equipment gains, occupants, or active HVAC.
+# Other geometry and material distributions retain their configured sampling.
+scenario_type: passive
+equip_peak: 0.0
+occ_peak: 0.0
+hvac_peak: 0.0
+hvac_mode: none

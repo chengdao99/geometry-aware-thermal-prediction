@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "generation_parameters": {
+    "scenario_type": "passive",
+    "equip_peak": 0.0,
+    "occ_peak": 0.0,
+    "hvac_peak": 0.0,
+    "hvac_mode": "none"
+  },
+  "buildings": [
+    {
+      "seed": 101,
+      "building_id": "L_BRK_3F_A0864_H390_G800_INS3_SVF023_ACH13_SCp_S101",
+      "hbjson": "L_BRK_3F_A0864_H390_G800_INS3_SVF023_ACH13_SCp_S101.hbjson",
+      "metadata": "L_BRK_3F_A0864_H390_G800_INS3_SVF023_ACH13_SCp_S101_meta.json",
+      "room_division_retries": 1,
+      "split": "train_set"
+    },
+    {
+      "seed": 102,
+      "building_id": "R_CLT_6F_A3926_H310_G800_INS3_SVF027_ACH12_SCp_S102",
+      "hbjson": "R_CLT_6F_A3926_H310_G800_INS3_SVF027_ACH12_SCp_S102.hbjson",
+      "metadata": "R_CLT_6F_A3926_H310_G800_INS3_SVF027_ACH12_SCp_S102_meta.json",
+      "room_division_retries": 1,
+      "split": "train_set"
+    },
+    {
+      "seed": 103,
+      "building_id": "C_BRK_4F_A2473_H270_G693_INS2_SVF054_ACH17_SCp_S103",
+      "hbjson": "C_BRK_4F_A2473_H270_G693_INS2_SVF054_ACH17_SCp_S103.hbjson",
+      "metadata": "C_BRK_4F_A2473_H270_G693_INS2_SVF054_ACH17_SCp_S103_meta.json",
+      "room_division_retries": 2,
+      "split": "train_set"
+    },
+    {
+      "seed": 104,
+      "building_id": "C_LLW_1F_A0744_H390_G705_INS4_SVF081_ACH16_SCp_S104",
+      "hbjson": "C_LLW_1F_A0744_H390_G705_INS4_SVF081_ACH16_SCp_S104.hbjson",
+      "metadata": "C_LLW_1F_A0744_H390_G705_INS4_SVF081_ACH16_SCp_S104_meta.json",
+      "room_division_retries": 9,
+      "split": "train_set"
+    },
+    {
+      "seed": 105,
+      "building_id": "U_CNW_2F_A0924_H330_G813_INS3_SVF070_ACH21_SCp_S105",
+      "hbjson": "U_CNW_2F_A0924_H330_G813_INS3_SVF070_ACH21_SCp_S105.hbjson",
+      "metadata": "U_CNW_2F_A0924_H330_G813_INS3_SVF070_ACH21_SCp_S105_meta.json",
+      "room_division_retries": 17,
+      "split": "train_set"
+    },
+    {
+      "seed": 106,
+      "building_id": "T_BRK_4F_A3662_H340_G800_INS3_SVF077_ACH11_SCp_S106",
+      "hbjson": "T_BRK_4F_A3662_H340_G800_INS3_SVF077_ACH11_SCp_S106.hbjson",
+      "metadata": "T_BRK_4F_A3662_H340_G800_INS3_SVF077_ACH11_SCp_S106_meta.json",
+      "room_division_retries": 1,
+      "split": "train_set"
+    },
+    {
+      "seed": 107,
+      "building_id": "R_CLT_TMF_A2168_H280_G800_INS2_SVF066_ACH16_SCp_S107",
+      "hbjson": "R_CLT_TMF_A2168_H280_G800_INS2_SVF066_ACH16_SCp_S107.hbjson",
+      "metadata": "R_CLT_TMF_A2168_H280_G800_INS2_SVF066_ACH16_SCp_S107_meta.json",
+      "room_division_retries": 1,
+      "split": "train_set"
+    },
+    {
+      "seed": 108,
+      "building_id": "R_BRK_2F_A1304_H360_G800_INS4_SVF086_ACH16_SCp_S108",
+      "hbjson": "R_BRK_2F_A1304_H360_G800_INS4_SVF086_ACH16_SCp_S108.hbjson",
+      "metadata": "R_BRK_2F_A1304_H360_G800_INS4_SVF086_ACH16_SCp_S108_meta.json",
+      "room_division_retries": 1,
+      "split": "train_set"
+    },
+    {
+      "seed": 109,
+      "building_id": "Q_CLT_TMF_A2263_H330_G800_INS4_SVF070_ACH11_SCp_S109",
+      "hbjson": "Q_CLT_TMF_A2263_H330_G800_INS4_SVF070_ACH11_SCp_S109.hbjson",
+      "metadata": "Q_CLT_TMF_A2263_H330_G800_INS4_SVF070_ACH11_SCp_S109_meta.json",
+      "room_division_retries": 1,
+      "split": "train_set"
+    },
+    {
+      "seed": 110,
+      "building_id": "C_BRK_3F_A1576_H370_G800_INS3_SVF058_ACH14_SCp_S110",
+      "hbjson": "C_BRK_3F_A1576_H370_G800_INS3_SVF058_ACH14_SCp_S110.hbjson",
+      "metadata": "C_BRK_3F_A1576_H370_G800_INS3_SVF058_ACH14_SCp_S110_meta.json",
+      "room_division_retries": 1,
+      "split": "val_set"
+    },
+    {
+      "seed": 111,
+      "building_id": "U_CNW_TMF_A1360_H360_G800_INS2_SVF071_ACH14_SCp_S111",
+      "hbjson": "U_CNW_TMF_A1360_H360_G800_INS2_SVF071_ACH14_SCp_S111.hbjson",
+      "metadata": "U_CNW_TMF_A1360_H360_G800_INS2_SVF071_ACH14_SCp_S111_meta.json",
+      "room_division_retries": 1,
+      "split": "test_set"
+    },
+    {
+      "seed": 112,
+      "building_id": "L_CLT_2F_A1049_H390_G800_INS3_SVF087_ACH12_SCp_S112",
+      "hbjson": "L_CLT_2F_A1049_H390_G800_INS3_SVF087_ACH12_SCp_S112.hbjson",
+      "metadata": "L_CLT_2F_A1049_H390_G800_INS3_SVF087_ACH12_SCp_S112_meta.json",
+      "room_division_retries": 1,
+      "split": "test_set"
+    },
+    {
+      "seed": 113,
+      "building_id": "R_CNW_3F_A2167_H280_G800_INS2_SVF057_ACH15_SCp_S113",
+      "hbjson": "R_CNW_3F_A2167_H280_G800_INS2_SVF057_ACH15_SCp_S113.hbjson",
+      "metadata": "R_CNW_3F_A2167_H280_G800_INS2_SVF057_ACH15_SCp_S113_meta.json",
+      "room_division_retries": 1,
+      "split": "test_set"
+    },
+    {
+      "seed": 114,
+      "building_id": "R_LLW_3F_A0630_H300_G800_INS4_SVF036_ACH13_SCp_S114",
+      "hbjson": "R_LLW_3F_A0630_H300_G800_INS4_SVF036_ACH13_SCp_S114.hbjson",
+      "metadata": "R_LLW_3F_A0630_H300_G800_INS4_SVF036_ACH13_SCp_S114_meta.json",
+      "room_division_retries": 1,
+      "split": "test_set"
+    },
+    {
+      "seed": 115,
+      "building_id": "U_CLT_3F_A0941_H380_G714_INS3_SVF067_ACH14_SCp_S115",
+      "hbjson": "U_CLT_3F_A0941_H380_G714_INS3_SVF067_ACH14_SCp_S115.hbjson",
+      "metadata": "U_CLT_3F_A0941_H380_G714_INS3_SVF067_ACH14_SCp_S115_meta.json",
+      "room_division_retries": 2,
+      "split": "test_set"
+    },
+    {
+      "seed": 116,
+      "building_id": "U_CLW_4F_A2314_H290_G705_INS3_SVF074_ACH14_SCp_S116",
+      "hbjson": "U_CLW_4F_A2314_H290_G705_INS3_SVF074_ACH14_SCp_S116.hbjson",
+      "metadata": "U_CLW_4F_A2314_H290_G705_INS3_SVF074_ACH14_SCp_S116_meta.json",
+      "room_division_retries": 4,
+      "split": "test_set"
+    },
+    {
+      "seed": 117,
+      "building_id": "R_BRK_6F_A1488_H370_G800_INS2_SVF037_ACH17_SCp_S117",
+      "hbjson": "R_BRK_6F_A1488_H370_G800_INS2_SVF037_ACH17_SCp_S117.hbjson",
+      "metadata": "R_BRK_6F_A1488_H370_G800_INS2_SVF037_ACH17_SCp_S117_meta.json",
+      "room_division_retries": 1,
+      "split": "test_set"
+    },
+    {
+      "seed": 118,
+      "building_id": "T_CNW_5F_A1482_H280_G800_INS3_SVF031_ACH13_SCp_S118",
+      "hbjson": "T_CNW_5F_A1482_H280_G800_INS3_SVF031_ACH13_SCp_S118.hbjson",
+      "metadata": "T_CNW_5F_A1482_H280_G800_INS3_SVF031_ACH13_SCp_S118_meta.json",
+      "room_division_retries": 1,
+      "split": "test_set"
+    },
+    {
+      "seed": 119,
+      "building_id": "C_CNW_1F_A0551_H310_G670_INS3_SVF092_ACH09_SCp_S119",
+      "hbjson": "C_CNW_1F_A0551_H310_G670_INS3_SVF092_ACH09_SCp_S119.hbjson",
+      "metadata": "C_CNW_1F_A0551_H310_G670_INS3_SVF092_ACH09_SCp_S119_meta.json",
+      "room_division_retries": 5,
+      "split": "test_set"
+    },
+    {
+      "seed": 120,
+      "building_id": "L_CNW_TMF_A1014_H300_G800_INS3_SVF088_ACH17_SCp_S120",
+      "hbjson": "L_CNW_TMF_A1014_H300_G800_INS3_SVF088_ACH17_SCp_S120.hbjson",
+      "metadata": "L_CNW_TMF_A1014_H300_G800_INS3_SVF088_ACH17_SCp_S120_meta.json",
+      "room_division_retries": 1,
+      "split": "test_set"
+    }
+  ]
+}

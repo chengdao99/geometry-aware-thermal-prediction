@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "model": "MAIN",
+  "research_run": "run2000_20260804_001005_S1919",
+  "checkpoint_epoch": 74,
+  "training_seed": 1919,
+  "cnn_input_dim": 12,
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "files_sha256": {
+    "best_model.pt": "6f2f9e19da25d0150d20d5ba8cf8974117a34ac5ae8569aeebe09cd77c4cf180",
+    "norm_stats.npz": "8dd09fcf5757a8ef86bf21bad32e1bf4e37f3025703f081ca21fffeba23c7a4f"
+  },
+  "researcher_selected": true,
+  "voxelizer_identity_confirmed_by_researcher": true,
+  "source_run_config_sha256": "62710137203907c1e52b890c76c175236dbc2b584769bb243466502d8e0698a9",
+  "public_configuration": "Selected run settings; machine paths and experiment monitoring are omitted.",
+  "checkpoint_preservation": "The original file is byte-identical to the selected research artifact and its analysis fingerprints. Embedded optimizer/scheduler states are retained to preserve that identity; no additional training state files are included.",
+  "voxel_provenance": "The recorded research run names voxel_4000. The demonstration uses the researcher-confirmed voxel_4000_v2 algorithm. These dataset families are not asserted to be identical."
+}
