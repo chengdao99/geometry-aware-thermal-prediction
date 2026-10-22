@@ -1,10 +1,38 @@
 # Geometry-Aware Zone-Level Thermal Prediction
 
+[![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python)](environment.yml)
+[![MIT License](https://img.shields.io/badge/Code-MIT-green.svg)](LICENSE)
+[![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23547641.svg)](https://doi.org/10.5281/zenodo.23547641)
+
 A Python framework for generating building thermal simulation datasets and predicting hourly zone-level operative temperatures from three-dimensional building information.
 
 The framework combines parametric building generation, geometric and physical data processing, a geometry-aware neural network, and temporal inference. Its prediction model uses sparse 3D convolution, target-zone attention over the building representation, and an autoregressive decoder that estimates the 0.1, 0.5, and 0.9 temperature quantiles.
 
 The repository includes **20 generated building cases** with HBJSON models, processed data, and example prediction results. Its four stages can be run independently using the outputs of the preceding stage or existing compatible files.
+
+## Context and aim
+
+This research originated as a **Master's thesis** at Chalmers University of Technology, within the **Sustainable Built Environments** research group in the [Department of Architecture and Civil Engineering](https://www.chalmers.se/en/departments/ace/). It addresses the need for rapid, zone-level thermal assessment across buildings with different geometries and constructions, without relying on measured indoor-temperature histories from the target building.
+
+The framework combines explicit three-dimensional building information with weather and operating conditions to predict hourly zone operative temperatures. The repository provides reusable research software, a trained model, and example data for building generation, simulation, training, and inference. The included examples are based on controlled, free-running EnergyPlus simulations rather than measured building data.
+
+**Project status:** Initial research software release (v1.0.0, October 2026); journal manuscript in preparation.
+
+## People and roles
+
+| Name | Role | Affiliation | ORCID or profile |
+| --- | --- | --- | --- |
+| Chengrui Yang | Lead researcher and developer | Chalmers University of Technology | - |
+| Alexander Hollberg | Master's thesis supervisor | Chalmers University of Technology | - |
+| Sanjay Somanath | Research mentor and collaborator | Chalmers University of Technology | - |
+| Yinan Yu | Master's thesis co-supervisor; research collaborator | Chalmers University of Technology | - |
+
+## Research outputs
+
+- **Master's thesis:** *From Spatial to Temporal: A Geometry-Aware Approach to Indoor Thermal Prediction* (Chalmers University of Technology, 2026). Link to the Chalmers thesis portal record to be added when available.
+- **Archived research software and example data:** [Zenodo, version 1.0.0](https://doi.org/10.5281/zenodo.23547641). Includes source code, model weights, and 20 generated building cases with simulation and prediction outputs.
+- **Journal article:** *From Spatial to Temporal: Geometry-Aware Cross-Building Prediction of Zone-Level Thermal Dynamics* (manuscript in preparation; DOI pending).
+- **How to cite the software:** Cite the [version-specific Zenodo record](https://doi.org/10.5281/zenodo.23547641); its citation formats are provided on the record page. The software, thesis, and journal article are separate research outputs and may have different identifiers.
 
 ## Workflow
 
@@ -81,11 +109,13 @@ conda activate geometry-aware-thermal-prediction
 
 Install EnergyPlus separately and provide the path to its executable when generating labels. The model's sparse-convolution implementation requires a compatible CUDA/spconv setup.
 
+**GPU access:** Training and inference require a compatible NVIDIA CUDA GPU. Cloud GPU environments, such as Google Colab, can be used when a local GPU is unavailable. Inference has been successfully tested on a Colab A100 GPU.
+
 Commands below use paths relative to the repository root.
 
 ## Weather data
 
-For reproducing the example simulation labels and predictions, we recommend `SWE_VG_Goteborg.City.AP.025120_TMYx.2011-2025.epw`, the Gothenburg City Airport TMYx weather file based on 2011–2025 source data. Download the matching version from the [official Climate.OneBuilding Sweden directory](https://climate.onebuilding.org/WMO_Region_6_Europe/SWE_Sweden/index.html), extract the EPW, and place it at `epw/SWE_VG_Goteborg.City.AP.025120_TMYx.2011-2025.epw` before running label generation, training, or inference. See [epw/README.md](epw/README.md) for the download instructions.
+For reproducing the example simulation labels and predictions, we recommend `SWE_VG_Goteborg.City.AP.025120_TMYx.2011-2025.epw`, the Gothenburg City Airport TMYx weather file based on 2011-2025 source data. Download the matching version from the [official Climate.OneBuilding Sweden directory](https://climate.onebuilding.org/WMO_Region_6_Europe/SWE_Sweden/index.html), extract the EPW, and place it at `epw/SWE_VG_Goteborg.City.AP.025120_TMYx.2011-2025.epw` before running label generation, training, or inference. See [epw/README.md](epw/README.md) for the download instructions.
 
 The weather file is downloaded separately and is not distributed with this repository. Keep simulation labels and model predictions paired with the same EPW; `--epw` can select another file.
 
@@ -93,7 +123,7 @@ The weather file is downloaded separately and is not distributed with this repos
 
 ### 1. Generate buildings
 
-Generate the 20 included building cases from seeds 101–120:
+Generate the 20 included building cases from seeds 101-120:
 
 ```bash
 python -m data_generation --start-seed 101 --count 20 \
